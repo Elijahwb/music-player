@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!--Fontawesome icons-->
+    <link rel="stylesheet" href="./css/all.css">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <!--custom css file-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <main class="main" id="main">
+        <section class="big-display" id="big-display">
+            <section class="library" id="library">
+                <div class="library-items">
+                    <h4 class="leading">Library</h4>
+                    <ul class="library-list">
+                        <li>
+                            <p>
+                                <i class="fas fa-hand-holding-heart">&nbsp;&nbsp;&nbsp;</i>playlists</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-user">&nbsp;&nbsp;&nbsp;</i>artists</p>
+                        </li>
+                        <li>
+                            <p class="active">
+                                <i class="fas fa-list">&nbsp;&nbsp;&nbsp;</i>albums</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-music">&nbsp;&nbsp;&nbsp;</i>songs</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="discover-items">
+                    <h4 class="leading">discover</h4>
+                    <ul class="discover-list">
+                        <li>
+                            <p>
+                                <i class="fas fa-store">&nbsp;&nbsp;&nbsp;</i>store</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-broadcast-tower">&nbsp;&nbsp;&nbsp;</i>radio</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-grin-hearts">&nbsp;&nbsp;&nbsp;</i>like</p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-folder">&nbsp;&nbsp;&nbsp;</i>browse</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="version">
+                    <p class="current">Current Version 1.0</p>
+                    <p class="update">Update Now</p>
+                </div>
+            </section>
+
+            <section class="main-display" id="main-display">
+                <div class="container" id="container">
+                    <div class="header-bar">
+                        <p class="active">Albums</p>
+                        <div class="items">
+                            <ul class="header-bar-items-list">
+                                <li><i class="fas fa-search"></i></li>
+                                <li><i class="fas fa-moon"></i></li>
+                                <li><i class="fas fa-bell"></i></li>
+                            </ul>
+                            <div class="user" id="user"></div>
+                        </div>
+                    </div>
+
+                    <div class="main-display-content">
+                        <div class="popular" id="popular">
+                            <h4>Popular</h4>
+                            <div class="container-2">
+                            <div class="owl-carousel one owl-theme song-scroller" id="song-scroller">
+                                    <div class="song-image playing" id="song-image">
+                                        <div class="outer-circle" id="outer-circle">
+                                        </div>
+                                        <div class="transparent-circle" id="transparent-circle"></div>
+                                        <div class="inner-circle" id="inner-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="song-image prev-1" id="song-image">
+                                        <div class="outer-circle" id="outer-circle">
+                                        </div>
+                                        <div class="transparent-circle" id="transparent-circle"></div>
+                                        <div class="inner-circle" id="inner-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="song-image prev-2" id="song-image">
+                                        <div class="outer-circle" id="outer-circle">
+                                        </div>
+                                        <div class="transparent-circle" id="transparent-circle"></div>
+                                        <div class="inner-circle" id="inner-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="song-image prev-3" id="song-image">
+                                        <div class="outer-circle" id="outer-circle">
+                                        </div>
+                                        <div class="transparent-circle" id="transparent-circle"></div>
+                                        <div class="inner-circle" id="inner-circle">
+                                        </div>
+                                    </div>
+
+                                    <div class="song-image next-1" id="song-image">
+                                        <div class="outer-circle" id="outer-circle">
+                                        </div>
+                                        <div class="transparent-circle" id="transparent-circle"></div>
+                                        <div class="inner-circle" id="inner-circle">
+                                        </div>
+                                    </div>
+                                    <div class="song-image next-2" id="song-image">
+                                        <div class="outer-circle" id="outer-circle">
+                                        </div>
+                                        <div class="transparent-circle" id="transparent-circle"></div>
+                                        <div class="inner-circle" id="inner-circle">
+                                        </div>
+                                    </div>
+                                    <div class="song-image next-3" id="song-image">
+                                        <div class="outer-circle" id="outer-circle">
+                                        </div>
+                                        <div class="transparent-circle" id="transparent-circle"></div>
+                                        <div class="inner-circle" id="inner-circle">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                            <div class="album-info" id="album-info">
+                                <p class="album-title">shape of you</p>
+                                <p class="info">10 Songs | 1 Artist</p>
+                            </div>
+                        </div>
+
+                        <div class="recent" id="recent">
+                            <h4>Recent</h4>
+                            <div class="owl-carousel two music-cards" id="music-cards">
+                                <div class="music-card" id="music-card">
+                                    <img src="./img/song-img-2.png" alt="">
+                                    <div class="song-info">
+                                        <p>Faded - Alan Walker</p>
+                                    </div>
+                                </div>
+
+                                <div class="music-card" id="music-card">
+                                    <img src="./img/song-img-9.jpg" alt="">
+                                    <div class="song-info">
+                                        <p>Faded - Alan Walker</p>
+                                    </div>
+                                </div>
+
+                                <div class="music-card" id="music-card">
+                                    <img src="./img/song-img-10.jpg" alt="">
+                                    <div class="song-info">
+                                        <p>Faded - Alan Walker</p>
+                                    </div>
+                                </div>
+
+                                <div class="music-card" id="music-card">
+                                    <img src="./img/song-img-11.jpg" alt="">
+                                    <div class="song-info">
+                                        <p>Faded - Alan Walker</p>
+                                    </div>
+                                </div>
+
+                                <div class="music-card" id="music-card">
+                                    <img src="./img/song-img-5.jpg" alt="">
+                                    <div class="song-info">
+                                        <p>Faded - Alan Walker</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="player" id="player">
+            <div class="music-info">
+                <img src="./img/song-img-2.png" alt="">
+                <div class="text-info">
+                    <p>Shape of you</p>
+                    <p>Ed Sheeran</p>
+                </div>
+            </div>
+            <div class="music-player" id="music-player">
+                <ul class="player-controls">
+                    <li class="back"><i class="fas fa-chevron-circle-left"></i></li>
+                    <li class="play"><i class="fas fa-play-circle active"></i></li>
+                    <li class="skip"><i class="fas fa-chevron-circle-right"></i></li>
+                    <li class="current-time">03:50</li>
+                    <li class="song-progress">
+                        <div class="progress"></div>
+                    </li>
+                    <li class="duration">05:00</li>
+                    <li class="shuffle"><i class="fas fa-crosshairs"></i></li>
+                    <li class="repeat"><i class="fas fa-adjust"></i></li>
+                    <li class="speaker"><i class="fas fa-volume-up"></i></li>
+                    <li class="decrease">-</li>
+                    <li class="volume-level">
+                        <div class="level"></div>
+                    </li>
+                    <li class="increase">+</li>
+                    <li class="like"><i class="fas fa-heart"></i></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!--Custom JavaScript Files-->
+    <script src="./js/data.js"></script>
+    <script src="./js/elements.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
